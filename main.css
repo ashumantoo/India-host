@@ -181,3 +181,77 @@ p::first-letter {
     background: white;
     color: #0e4f1f;
 }
+
+/***********************************************
+ *               KEY FEATURES
+ ***********************************************/
+#key-features{
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+}
+
+#key-features .section-title {
+    color: white;
+   margin: 32px;
+}
+
+.key-features__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.key-feature{
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+}
+
+.key-feature__image{
+    height: 128px;
+    width: 128px;
+    border: 1px solid #424242;
+    border-radius: 50%;
+    background: #ffcede;
+    margin: auto;
+}
+
+
+.key-features__description{
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color:white
+}
+
+/********************************************
+ *            FOOTER
+ ********************************************/
+.main-footer {
+    background: black;
+    margin-top: 48px;
+    padding: 32px;
+}
+
+.main-footer__links {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.main-footer__link {
+    display: inline-block;
+    margin: 0 16px;
+}
+
+.main-footer__link a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+    color: #ccc;
+}
