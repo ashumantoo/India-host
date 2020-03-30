@@ -14,6 +14,8 @@ body {
     width: 100%;
     background: #2ddf2d;
     padding: 8px 11px;
+    position: fixed;
+    z-index: 1;
 }
 
 /* combinator selector - select the direct child div of the main header */
