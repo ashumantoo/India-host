@@ -4,7 +4,8 @@ main {
 }
 
 .background {
-    background: url('../plans-background.jpg');
+    background: url('../images/plans-background.jpg') center/cover;
+    filter: grayscale(40%); /* The filter property defines visual effects (like blur and saturation) to an element (often <img>). */
     width: 100%;
     height: 100%;
     position: fixed;
