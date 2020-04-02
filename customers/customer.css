@@ -1,5 +1,6 @@
 .testimonial {
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 1.2rem;
     /* margin: 48px 0; */
     margin-bottom: 48px;
   }
@@ -23,7 +24,8 @@
 
 .testimonial__image {
     width: 100%;
-    vertical-align: middle;
+    /* max-width: 700px;   will set the max widht of the image if screen size increase */
+    vertical-align: top;
 }
   
 
@@ -44,11 +46,13 @@
   .testimonial__name {
     margin: 3px;
     color: #ff5454;
+    font-size: 2rem;
   }
   
   .testimonial__subtitle {
     margin: 0;
-    font-size: 18px;
+    /* font-size: 18px; */
+    font-size: 1.1rem;
     color: #ccc;
   }
   
