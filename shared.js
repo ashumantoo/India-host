@@ -11,22 +11,43 @@
 var backdrop = document.querySelector('.backdrop');
 var modal = document.querySelector('.modal');
 var selectedPlanButtons = document.querySelectorAll('.plan button');
-
 var noButton = document.querySelector('.modal__action--negative');
+var toggleButton = document.querySelector('.toggle-button');
+var mobileNav = document.querySelector('.mobile__nav');
 
-console.log(selectedPlanButtons);
 
 for (let i = 0; i < selectedPlanButtons.length; i++) {
     selectedPlanButtons[i].addEventListener('click', function () {
-        modal.style.display = 'block';
-        backdrop.style.display = 'block';
+        // modal.style.display = 'block';
+        // backdrop.style.display = 'block';
+        // modal.className = 'open'  //this will actually overwritten the complete class
+        modal.classList.add('open');
+        backdrop.classList.add('open');
     });
 }
 
-noButton.addEventListener('click',function(){
-    modal.style.display = 'none';
-    backdrop.style.display= 'none';
+backdrop.addEventListener('click', function () {
+    // mobileNav.style.display = 'none';
+    mobileNav.classList.remove('open');
+    closeModal();
 })
 
+if (noButton) {
+    noButton.addEventListener('click', closeModal);
+}
 
-// backdrop.style.display = 'block';
+function closeModal() {
+    // modal.style.display = 'none';
+    // backdrop.style.display = 'none';
+    if (modal) {
+        modal.classList.remove('open');
+    }
+    backdrop.classList.remove('open');
+}
+
+toggleButton.addEventListener('click', function () {
+    // mobileNav.style.display = 'block';
+    // backdrop.style.display = 'block';
+    mobileNav.classList.add('open');
+    backdrop.classList.add('open');
+});
